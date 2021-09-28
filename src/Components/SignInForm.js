@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useOktaAuth } from '@okta/okta-react';
+import Navbar from './Navbar';
 
 const SignInForm = () => {
   const { oktaAuth } = useOktaAuth();
@@ -35,8 +36,8 @@ const SignInForm = () => {
   }
 
   return (
-
-
+<div>
+<Navbar/>
 <form onSubmit={handleSubmit} className = " w-50 m-auto">
   <div className="form-group">
     <label for="exampleInputEmail1 ">Email address</label>
@@ -54,6 +55,7 @@ const SignInForm = () => {
   
   <button  id="submit" value="Submit"  type="submit" class="btn btn-primary">Submit</button>
 </form>
+</div>
 
 
     

@@ -14,9 +14,9 @@ const Navbar = () => {
 
   const logout = async () => oktaAuth.signOut();
 
-  const signin = async () => history.push("/login");
+  // const signin = async () => history.push("/login");
 
-  const signOut = async () => oktaAuth.signOut();
+  // const signOut = async () => oktaAuth.signOut();
 
   const button = authState.isAuthenticated ? (
     <button className="btn btn-secondary" onClick={logout}>
